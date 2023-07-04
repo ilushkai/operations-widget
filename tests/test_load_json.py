@@ -9,13 +9,13 @@ def load_file(filename):
 
 
 def test_json_key():
-    date = load_file('testfile.json')
+    date = load_file('tests/testfile.json')
     for i in date:
         assert "1" in i, "ключ не найден"
 
 
 def test_json_value():
-    date = load_file('testfile.json')
+    date = load_file('tests/testfile.json')
     for i in date:
         assert i["1"] == "one", "значение неверное"
 
